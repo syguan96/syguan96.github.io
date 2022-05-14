@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About on Researcher</title>
-    <link>https://example.com/</link>
-    <description>Recent content in About on Researcher</description>
+    <title>About on My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content in About on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://example.com/about/</link>
+      <link>http://example.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/about/</guid>
-      <description>About Me  This is a Hugo based resume template. You can find the full source code on GitHub.
-Research Interest Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis1. Mauris id urna ante.
-Fusce pharetra diam ac nisi aliquet, velegestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit2. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.</description>
+      <guid>http://example.org/about/</guid>
+      <description>About Me  My name is Shanyan Guan. I am a direct doctorate student at Shanghai Jiao Tong University, supervised by Prof. Xiaokang Yang. During 2017-2019, I was working with Prof. Bingbing Ni. Currently (2019-), I am engaged in inverse graphics and domain generalization with Prof. Yunbo Wang. I received my B.S. in Electronic and Information Engineering in Xidian University in 2017.
+My research focuses on human mesh reconstruction and related applications.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://example.com/contact/</link>
+      <link>http://example.org/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/contact/</guid>
-      <description> Email: foo@xyz.com Phone: +91-123123   Mailing Address  221B, Baker Street
-London
-United Kingdom
-  Social  Facebook Twitter Google+  </description>
+      <guid>http://example.org/contact/</guid>
+      <description> Email: shyanguan@sjtu.edu.cn Wechat: Guan-Shyan   Mailing Address  Software Building, Shanghai Jiao Tong Unicersity 800 Dongchuan Road
+Minhang District
+Shanghai
+China
+ </description>
     </item>
     
   </channel>
