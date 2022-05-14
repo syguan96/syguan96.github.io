@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://syguan96.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>About on Researcher</title>
+    <link>https://example.com/</link>
+    <description>Recent content in About on Researcher</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 14 May 2022 13:02:16 +0800</lastBuildDate><atom:link href="https://syguan96.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://syguan96.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 14 May 2022 13:02:16 +0800</pubDate>
+      <title>About</title>
+      <link>https://example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://syguan96.github.io/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://example.com/about/</guid>
+      <description>About Me  This is a Hugo based resume template. You can find the full source code on GitHub.
+Research Interest Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis1. Mauris id urna ante.
+Fusce pharetra diam ac nisi aliquet, velegestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit2. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/contact/</guid>
+      <description> Email: foo@xyz.com Phone: +91-123123   Mailing Address  221B, Baker Street
+London
+United Kingdom
+  Social  Facebook Twitter Google+  </description>
     </item>
     
   </channel>
