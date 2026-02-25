@@ -15,13 +15,13 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.55;
     color: var(--text);
     background: var(--bg);
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 40px 24px 80px;
+    padding: 32px 20px 60px;
 }
 
 /* Header */
@@ -74,25 +74,25 @@ body {
 }
 
 .photo {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid var(--border);
+    border-radius: 50%;
+    border: 2px solid var(--border);
 }
 
 /* Section */
 .section {
-    margin-bottom: 36px;
+    margin-bottom: 28px;
 }
 
 .section-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--text);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ccc;
 }
 
 .section p {
