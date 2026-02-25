@@ -82,6 +82,8 @@ body {
 .recruitment a {
     color: var(--accent);
     text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .recruitment a:hover {
