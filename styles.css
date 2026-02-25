@@ -6,22 +6,23 @@
 }
 
 :root {
-    --text: #222;
-    --text-light: #555;
-    --accent: #0066cc;
-    --border: #ddd;
+    --text: #111;
+    --text-light: #444;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --border: #e5e5e5;
     --bg: #fff;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 15px;
-    line-height: 1.55;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
     color: var(--text);
     background: var(--bg);
-    max-width: 800px;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 32px 20px 60px;
+    padding: 48px 24px 80px;
 }
 
 /* Header */
@@ -30,69 +31,86 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
 }
 
-.header-left {
+.header-main {
     flex: 1;
 }
 
 .name {
+    font-family: 'Lora', Georgia, serif;
     font-size: 2rem;
     font-weight: 600;
     color: var(--text);
     line-height: 1.3;
+    margin-bottom: 2px;
 }
 
 .name-en {
-    font-size: 1.4rem;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-light);
-    margin-bottom: 8px;
-}
-
-.title {
-    font-size: 1.05rem;
-    color: var(--text-light);
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 }
 
 .affiliation {
     font-size: 1rem;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 12px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.affiliation strong {
+    color: var(--text);
 }
 
 .contact {
     font-size: 0.95rem;
     color: var(--text-light);
+    margin-bottom: 16px;
 }
 
-.header-right {
+.recruitment {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.recruitment a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.recruitment a:hover {
+    text-decoration: underline;
+}
+
+.header-photo {
     flex-shrink: 0;
 }
 
-.photo {
-    width: 100px;
-    height: 100px;
+.header-photo img {
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid var(--border);
+    border-radius: 4px;
+    border: 1px solid var(--border);
 }
 
 /* Section */
 .section {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .section-title {
+    font-family: 'Lora', Georgia, serif;
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 12px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid #ccc;
+    margin-bottom: 14px;
 }
 
 .section p {
@@ -109,22 +127,13 @@ body {
     text-decoration: underline;
 }
 
-/* Recruitment */
-.recruitment {
-    background: #f5f5f5;
-    padding: 12px 16px;
-    border-radius: 6px;
-    margin-bottom: 28px;
-    font-size: 0.95rem;
-}
-
 /* News */
 .news {
     list-style: none;
 }
 
 .news li {
-    padding: 6px 0;
+    padding: 5px 0;
     color: var(--text-light);
     display: flex;
     gap: 12px;
@@ -132,8 +141,9 @@ body {
 
 .news .date {
     flex-shrink: 0;
-    width: 60px;
+    width: 55px;
     color: var(--text-light);
+    font-size: 0.95rem;
 }
 
 /* Publications */
@@ -141,19 +151,18 @@ body {
     margin-bottom: 24px;
 }
 
-.pub-year h4 {
-    font-size: 1.05rem;
+.pub-year h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 12px;
-    padding-left: 10px;
-    border-left: 3px solid var(--accent);
+    margin-bottom: 10px;
 }
 
 .pub-item {
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .pub-item:last-child {
@@ -161,26 +170,28 @@ body {
 }
 
 .pub-title {
-    font-size: 1rem;
+    font-size: 0.98rem;
     font-weight: 500;
     color: var(--text);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
+    line-height: 1.45;
 }
 
 .pub-authors {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-light);
     margin-bottom: 2px;
 }
 
 .pub-venue {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--text-light);
     margin-bottom: 4px;
 }
 
 .pub-venue strong {
     color: var(--text);
+    font-weight: 500;
 }
 
 .badge {
@@ -188,7 +199,8 @@ body {
     color: #fff;
     padding: 1px 6px;
     border-radius: 3px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 500;
     margin-left: 6px;
 }
 
@@ -197,22 +209,21 @@ body {
 }
 
 .pub-links a {
-    margin-right: 12px;
+    color: var(--accent);
+    margin-right: 10px;
 }
 
 /* Talks */
 .talk-item {
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .talk-item:last-child {
     border-bottom: none;
 }
 
-.talk-title {
-    font-size: 0.98rem;
-    color: var(--text);
+.talk-item p {
     margin-bottom: 2px;
 }
 
@@ -225,14 +236,15 @@ body {
 .footer {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border);
     text-align: center;
     font-size: 0.85rem;
     color: #888;
 }
 
 .legend {
-    font-size: 0.8rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
     font-weight: 400;
     color: #888;
     margin-left: 8px;
@@ -245,16 +257,16 @@ body {
         text-align: center;
     }
     
-    .header-right {
+    .header-photo {
         margin: 0 auto;
-    }
-    
-    .news .date {
-        width: auto;
     }
     
     .news li {
         flex-direction: column;
         gap: 2px;
+    }
+    
+    .news .date {
+        width: auto;
     }
 }

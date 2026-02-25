@@ -7,37 +7,34 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <div class="header-left">
+            <div class="header-main">
                 <h1 class="name">官善琰</h1>
-                <h2 class="name-en">Shanyan Guan</h2>
-                <p class="title">Researcher, AI Photography R&D</p>
-                <p class="affiliation">vivo Imaging Department</p>
+                <h1 class="name-en">Shanyan Guan</h1>
+                
+                <p class="affiliation">Researcher, AI Photography R&D, <strong>vivo Imaging Department</strong></p>
                 
                 <div class="contact">
                     <p>Email: guanshanyan@vivo.com</p>
                     <p>Shanghai, China</p>
                 </div>
+                
+                <p class="recruitment">📢 <strong>招生</strong>: 长期招收实习生 & 少量应届校招名额。研究方向：视频模型后训练 | 高效图像生成/编辑 | 世界模型。 <a href="mailto:guanshanyan@vivo.com">联系我</a></p>
             </div>
-            <div class="header-right">
-                <img src="photo.jpg" alt="Shanyan Guan" class="photo">
+            
+            <div class="header-photo">
+                <img src="photo.jpg" alt="Shanyan Guan">
             </div>
         </header>
 
-        <!-- Recruitment -->
-        <section class="section recruitment">
-            <p><strong>📢 招生</strong> 长期招收实习生 & 少量应届校招名额。研究方向：视频模型后训练 | 高效图像生成/编辑 | 世界模型。 
-            <a href="mailto:guanshanyan@vivo.com">联系我</a></p>
-        </section>
-
         <!-- About -->
         <section class="section">
-            <h3 class="section-title">About</h3>
+            <h2 class="section-title">About</h2>
             <p>I am a researcher specializing in computer vision and artificial intelligence. Currently, I work at <strong>vivo Imaging Department</strong>, focusing on AI Photography R&D.</p>
             <p>I received my Ph.D. from <strong>Shanghai Jiao Tong University</strong> in 2024, advised by Prof. Xiaokang Yang and Prof. Yunbo Wang. I earned my B.S. from <strong>Xidian University</strong> in 2017.</p>
             <p><strong>Industry Experience:</strong> I have interned at leading tech companies including Tencent XR, SenseTime, Tencent YouTu Lab, and miHoYo.</p>
@@ -46,22 +43,22 @@
 
         <!-- News -->
         <section class="section">
-            <h3 class="section-title">News</h3>
+            <h2 class="section-title">News</h2>
             <ul class="news">
-                <li><span class="date">2025</span> Papers accepted to CVPR 2026 (3 papers), ICLR 2026 (2 papers).</li>
-                <li><span class="date">2024.06</span> Joined vivo Imaging Department as a researcher.</li>
-                <li><span class="date">2024.03</span> Received Ph.D. degree from Shanghai Jiao Tong University.</li>
-                <li><span class="date">2024</span> Papers accepted to ICLR 2026, NeurIPS 2024, ECCV 2024.</li>
+                <li><span class="date">2025</span> Papers accepted to CVPR 2026 (3 papers), ICLR 2026 (1 paper).</li>
+                <li><span class="date">2025.06</span> Joined vivo Imaging Department as a researcher.</li>
+                <li><span class="date">2025.03</span> Received Ph.D. degree from Shanghai Jiao Tong University.</li>
+                <li><span class="date">2024</span> Papers accepted to NeurIPS 2024, ECCV 2024.</li>
                 <li><span class="date">2023.10</span> Gave a talk at IJCAI 2024 Industry Day.</li>
             </ul>
         </section>
 
         <!-- Publications -->
         <section class="section">
-            <h3 class="section-title">Publications <span class="legend">(* Co-first author, † Project Lead)</span></h3>
+            <h2 class="section-title">Publications <span class="legend">(* Co-first author, † Project Lead)</span></h2>
             
             <div class="pub-year">
-                <h4>2025</h4>
+                <h3>2026</h3>
                 <div class="pub-item">
                     <p class="pub-title"><strong>VINS-120K: Ultra High-Resolution Image Editing with A Large-Scale Dataset</strong></p>
                     <p class="pub-authors">Zhizhou Chen, <strong>Shanyan Guan</strong>, Zhanxin Gao, En Ci, Yanhao Ge, Wei Li, Zhenyu Zhang, Jian Yang, Ying Tai</p>
@@ -82,6 +79,10 @@
                     <p class="pub-authors">Yihang Bao, Zhen Huang, <strong>Shanyan Guan</strong>, Songlin Yang, Yanhao Ge, Wei Li, Bukun Huang, Zengmin Xu</p>
                     <p class="pub-venue"><strong>ICLR 2026</strong></p>
                 </div>
+            </div>
+
+            <div class="pub-year">
+                <h3>2025</h3>
                 <div class="pub-item">
                     <p class="pub-title"><strong>UltraHR-100K: Enhancing UHR Image Synthesis with A Large-Scale High-Quality Dataset</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>, Yanhao Ge, Yunbo Wang, Wei Li, Xiaokang Yang</p>
@@ -90,73 +91,73 @@
                 <div class="pub-item">
                     <p class="pub-title"><strong>NeoWorld: Neural Simulation of Explorable Virtual Worlds via Progressive 3D Unfolding</strong></p>
                     <p class="pub-authors">Yanpeng Zhao, <strong>Shanyan Guan</strong>, Yunbo Wang, Yanhao Ge, Wei Li, Xiaokang Yang</p>
-                    <p class="pub-venue"><strong>arXiv 2025</strong></p>
+                    <p class="pub-venue"><strong>arXiv preprint, 2025</strong></p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>Describe, Don't Dictate: Semantic Image Editing with Natural Language Intent</strong></p>
-                    <p class="pub-authors">En Ci*, <strong>Shanyan Guan</strong>*, Yanhao Ge, Yilin Zhang, Wei Li, Zhenyu Zhang, Jian Yang, Ying Tai</p>
+                    <p class="pub-authors">En Ci*, <strong>Shanyan Guan</strong>*, Yanhao Ge, Yilin Zhang, Wei Li, Jian Yang, Ying Zhenyu Zhang, Tai</p>
                     <p class="pub-venue"><strong>ICCV 2025</strong></p>
-                    <p class="pub-links"><a href="https://arxiv.org/abs/2508.20505">[Paper]</a> <a href="https://zhuanlan.zhihu.com/p/1945784172087051421">[知乎]</a></p>
+                    <p class="pub-links">[<a href="https://arxiv.org/abs/2508.20505">Paper</a>] [<a href="https://zhuanlan.zhihu.com/p/1945784172087051421">知乎</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>PostEdit: Posterior Sampling for Efficient Zero-Shot Image Editing</strong></p>
                     <p class="pub-authors">Feng Tian, Yixuan Li, Yichao Yan, <strong>Shanyan Guan</strong>, Yanhao Ge, Xiaokang Yang</p>
-                    <p class="pub-venue"><strong>ICLR 2026</strong></p>
-                    <p class="pub-links"><a href="https://openreview.net/forum?id=J8YWCBPgx7">[Paper]</a> <a href="https://github.com/TianFeng-AI/PostEdit">[Code]</a></p>
+                    <p class="pub-venue"><strong>ICLR 2025</strong></p>
+                    <p class="pub-links">[<a href="https://openreview.net/forum?id=J8YWCBPgx7">Paper</a>] [<a href="https://github.com/TianFeng-AI/PostEdit">Code</a>]</p>
                 </div>
             </div>
 
             <div class="pub-year">
-                <h4>2024</h4>
+                <h3>2024</h3>
                 <div class="pub-item">
                     <p class="pub-title"><strong>NeuMA: Neural Material Adaptor for Visual Grounding of Intrinsic Dynamics</strong></p>
                     <p class="pub-authors">Junyi Cao, <strong>Shanyan Guan</strong>†, Yanhao Ge, Wei Li, Xiaokang Yang, Chao Ma</p>
                     <p class="pub-venue"><strong>NeurIPS 2024</strong></p>
-                    <p class="pub-links"><a href="https://openreview.net/pdf?id=AvWB40qXZh">[Paper]</a> <a href="https://github.com/XJay18/NeuMA">[Code]</a> <a href="https://xjay18.github.io/NeuMA_page/">[Project]</a></p>
+                    <p class="pub-links">[<a href="https://openreview.net/pdf?id=AvWB40qXZh">Paper</a>] [<a href="https://github.com/XJay18/NeuMA">Code</a>] [<a href="https://xjay18.github.io/NeuMA_page/">Project</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>HybridBooth: Hybrid Prompt Inversion for Efficient Subject-Driven Generation</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>*, Yanhao Ge*, Ying Tai, Jian Yang, Wei Li, Mingyu You</p>
                     <p class="pub-venue"><strong>ECCV 2024</strong></p>
-                    <p class="pub-links"><a href="https://arxiv.org/abs/2410.08192">[Paper]</a> <a href="https://sites.google.com/view/hybridbooth">[Project]</a></p>
+                    <p class="pub-links">[<a href="https://arxiv.org/abs/2410.08192">Paper</a>] [<a href="https://sites.google.com/view/hybridbooth">Project</a>]</p>
                 </div>
             </div>
 
             <div class="pub-year">
-                <h4>2022</h4>
+                <h3>2022</h3>
                 <div class="pub-item">
                     <p class="pub-title"><strong>CageNeRF: Cage-based Neural Radiance Field for Generalized 3D Deformation and Animation</strong></p>
                     <p class="pub-authors">Yicong Peng, Yichao Yan, Shengqi Liu, Yuhao Cheng, <strong>Shanyan Guan</strong>, Bowen Pan, Guangtao Zhai, Xiaokang Yang</p>
                     <p class="pub-venue"><strong>NeurIPS 2022</strong></p>
-                    <p class="pub-links"><a href="https://openreview.net/forum?id=kUnHCGiILeU">[Paper]</a> <a href="https://github.com/PengYicong/CageNeRF">[Code]</a></p>
+                    <p class="pub-links">[<a href="https://openreview.net/forum?id=kUnHCGiILeU">Paper</a>] [<a href="https://github.com/PengYicong/CageNeRF">Code</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>Out-of-Domain Human Mesh Reconstruction via Dynamic Bilevel Online Adaptation</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>, Jingwei Xu, Michelle Z He, Yunbo Wang, Bingbing Ni, Xiaokang Yang</p>
                     <p class="pub-venue"><strong>IEEE T-PAMI 2022</strong></p>
-                    <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/9842366/">[Paper]</a> <a href="https://sites.google.com/view/dynaboa">[Project]</a> <a href="https://github.com/syguan96/DynaBOA">[Code]</a></p>
+                    <p class="pub-links">[<a href="https://ieeexplore.ieee.org/document/9842366/">Paper</a>] [<a href="https://sites.google.com/view/dynaboa">Project</a>] [<a href="https://github.com/syguan96/DynaBOA">Code</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>PTSEFormer: Progressive Temporal-Spatial Enhanced Transformer Towards Video Object Detection</strong></p>
                     <p class="pub-authors">Han Wang, Jun Tang, Xiaodong Liu, <strong>Shanyan Guan</strong>, Rong Xie, Li Song</p>
                     <p class="pub-venue"><strong>ECCV 2022</strong></p>
-                    <p class="pub-links"><a href="https://arxiv.org/abs/2209.02242">[Paper]</a> <a href="https://github.com/syguan96/PTSEFormer">[Code]</a></p>
+                    <p class="pub-links">[<a href="https://arxiv.org/abs/2209.02242">Paper</a>] [<a href="https://github.com/syguan96/PTSEFormer">Code</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>NeuroFluid: Fluid Dynamics Grounding with Particle-Driven Neural Radiance Fields</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>, Huayu Deng, Yunbo Wang, Xiaokang Yang</p>
                     <p class="pub-venue"><strong>ICML 2022</strong> <span class="badge">Spotlight</span></p>
-                    <p class="pub-links"><a href="https://arxiv.org/abs/2203.01762">[Paper]</a> <a href="https://syguan96.github.io/NeuroFluid/">[Project]</a> <a href="https://github.com/syguan96/NeuroFluid">[Code]</a></p>
+                    <p class="pub-links">[<a href="https://arxiv.org/abs/2203.01762">Paper</a>] [<a href="https://syguan96.github.io/NeuroFluid/">Project</a>] [<a href="https://github.com/syguan96/NeuroFluid">Code</a>]</p>
                 </div>
             </div>
 
             <div class="pub-year">
-                <h4>2021 & Earlier</h4>
+                <h3>2021 & Earlier</h3>
                 <div class="pub-item">
                     <p class="pub-title"><strong>Bilevel Online Adaptation for Out-of-Domain Human Mesh Reconstruction</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>*, Jingwei Xu*, Yunbo Wang, Bingbing Ni, Xiaokang Yang</p>
                     <p class="pub-venue"><strong>CVPR 2021</strong></p>
-                    <p class="pub-links"><a href="https://arxiv.org/pdf/2103.16449">[Paper]</a> <a href="https://sites.google.com/view/dynaboa/boa-cvpr-2021">[Project]</a> <a href="https://github.com/syguan96/BOA">[Code]</a></p>
+                    <p class="pub-links">[<a href="https://arxiv.org/pdf/2103.16449">Paper</a>] [<a href="https://sites.google.com/view/dynaboa/boa-cvpr-2021">Project</a>] [<a href="https://github.com/syguan96/BOA">Code</a>]</p>
                 </div>
                 <div class="pub-item">
                     <p class="pub-title"><strong>Collaborative Learning for Faster StyleGAN Embedding</strong></p>
@@ -167,28 +168,28 @@
                     <p class="pub-title"><strong>Human Action Transfer Based on 3D Model Reconstruction</strong></p>
                     <p class="pub-authors"><strong>Shanyan Guan</strong>*, Shuo Wen*, Dexin Yang*, Bingbing Ni, Wendong Zhang, Jun Tang, Xiaokang Yang</p>
                     <p class="pub-venue"><strong>AAAI 2019</strong> <span class="badge">Oral</span></p>
-                    <p class="pub-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/4849">[Paper]</a></p>
+                    <p class="pub-links">[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/4849">Paper</a>]</p>
                 </div>
             </div>
         </section>
 
         <!-- Talks -->
         <section class="section">
-            <h3 class="section-title">Talks</h3>
+            <h2 class="section-title">Talks</h2>
             <div class="talk-item">
-                <p class="talk-title">Next-Gen Camera Systems: Instilling Intuitive Imagination in Smartphones</p>
+                <p><strong>Next-Gen Camera Systems: Instilling Intuitive Imagination in Smartphones</strong></p>
                 <p class="talk-venue">IJCAI 2024 Industry Day</p>
             </div>
             <div class="talk-item">
-                <p class="talk-title">Next-Gen Camera System: Instilling Intuitive Imagination in Smartphones</p>
+                <p><strong>Next-Gen Camera System: Instilling Intuitive Imagination in Smartphones</strong></p>
                 <p class="talk-venue">GAMES Webinar 337</p>
             </div>
             <div class="talk-item">
-                <p class="talk-title">基于视觉的领域泛化和物理运动推断</p>
+                <p><strong>基于视觉的领域泛化和物理运动推断</strong></p>
                 <p class="talk-venue">智东西公开课</p>
             </div>
             <div class="talk-item">
-                <p class="talk-title">基于视觉的物理规律反演</p>
+                <p><strong>基于视觉的物理规律反演</strong></p>
                 <p class="talk-venue">智东西公开课</p>
             </div>
         </section>
