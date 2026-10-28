@@ -19,7 +19,7 @@
     --surface-hover: #fafafa;
     --rail: 230px;
     --gutter: 36px;
-    --max-width: 1040px;
+    --max-width: 1200px;
 }
 
 html {
@@ -36,6 +36,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.62;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -88,9 +89,10 @@ a {
 
 .name {
     color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: clamp(2.3rem, 5vw, 4.15rem);
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: -0.015em;
     line-height: 0.95;
 }
 
@@ -205,6 +207,52 @@ a {
     font-size: 0.9rem;
 }
 
+.rail-news {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+}
+
+.rail-news-title {
+    color: var(--mit-red);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.rail-news ul {
+    list-style: none;
+}
+
+.rail-news li {
+    color: var(--body);
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+.rail-news .news-date {
+    color: var(--muted);
+    font-weight: 700;
+    margin-right: 7px;
+}
+
+.rail-news li strong {
+    color: var(--ink);
+}
+
+.rail-news a {
+    color: var(--mit-red);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.rail-news a:hover {
+    text-decoration: underline;
+}
+
 .motto {
     border-top: 4px solid var(--mit-red);
     color: var(--ink);
@@ -221,8 +269,8 @@ a {
 
 .section {
     display: grid;
-    gap: 26px;
-    grid-template-columns: 118px minmax(0, 1fr);
+    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
     padding: 0 0 30px;
 }
 
@@ -248,7 +296,12 @@ a {
     color: var(--body);
     font-size: 0.98rem;
     margin-bottom: 0.8rem;
-    max-width: 680px;
+    max-width: 720px;
+}
+
+/* Publications span the full content width; the year column already provides structure */
+.section--pub .section-body p {
+    max-width: none;
 }
 
 .section-body p:last-child {
@@ -270,31 +323,25 @@ a {
     letter-spacing: 0.02em;
 }
 
-.pub-year {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: 62px minmax(0, 1fr);
-}
-
-.pub-year + .pub-year {
-    margin-top: 28px;
-}
-
-.pub-year h3 {
-    border-top: 3px solid var(--ink);
-    color: var(--ink);
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2;
-    padding-top: 12px;
+.legend .thumb-medal {
+    display: inline-flex;
+    margin: 0 3px;
+    vertical-align: -5px;
 }
 
 .pub-list {
     border-top: 3px solid var(--ink);
 }
 
+.pub-list--flat {
+    border-top: 0;
+}
+
 .pub-item {
+    align-items: flex-start;
     border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    gap: 16px;
     padding: 14px 0 15px;
     transition: background-color 140ms ease, padding-left 140ms ease;
 }
@@ -304,40 +351,92 @@ a {
     padding-left: 8px;
 }
 
+.pub-thumb {
+    background: var(--surface);
+    border: 1px solid var(--line-soft);
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+}
+
+.thumb-tags {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.thumb-tag {
+    background: var(--mit-red);
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.thumb-medal {
+    align-items: center;
+    background: linear-gradient(135deg, #e9b949, #c28f1a);
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: flex;
+    flex-shrink: 0;
+    height: 18px;
+    justify-content: center;
+    width: 18px;
+}
+
+.thumb-medal--silver {
+    background: linear-gradient(135deg, #b8c1cb, #8b97a3);
+}
+
+.thumb-medal svg {
+    height: 11px;
+    width: 11px;
+}
+
+.pub-thumb img {
+    display: block;
+    height: 113px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.pub-thumb img.fit-contain {
+    object-fit: contain;
+}
+
+.pub-body {
+    flex: 1;
+    min-width: 0;
+}
+
 .pub-title {
     color: var(--ink);
-    font-size: 1.02rem;
+    font-size: 1.04rem;
     font-weight: 700;
-    line-height: 1.4;
+    letter-spacing: -0.003em;
+    line-height: 1.42;
+    margin-bottom: 6px;
+}
+
+.pub-authors {
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.62;
     margin-bottom: 5px;
 }
 
-.pub-authors,
-.pub-venue {
-    color: var(--muted);
-    font-size: 0.84rem;
-    line-height: 1.55;
-    margin-bottom: 4px;
-}
-
-.pub-authors strong,
-.pub-venue strong {
+.pub-authors strong {
     color: var(--ink);
     font-weight: 700;
-}
-
-.badge {
-    border: 1px solid var(--mit-red);
-    color: var(--mit-red);
-    display: inline-block;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    line-height: 1.2;
-    margin-left: 7px;
-    padding: 2px 5px;
-    text-transform: uppercase;
-    vertical-align: middle;
 }
 
 .pub-links {
@@ -455,17 +554,23 @@ a {
 
     .header-photo,
     .affiliation,
-    .contact {
+    .contact,
+    .rail-news {
         margin-bottom: 0;
     }
 
     .affiliation,
-    .contact {
+    .contact,
+    .rail-news {
         border-bottom: 0;
         padding-bottom: 0;
     }
 
     .contact {
+        grid-column: 2;
+    }
+
+    .rail-news {
         grid-column: 2;
     }
 
@@ -484,9 +589,7 @@ a {
         gap: 8px;
     }
 
-    .profile-rail,
-    .section,
-    .pub-year {
+    .profile-rail {
         grid-template-columns: 1fr;
     }
 
@@ -499,7 +602,8 @@ a {
     }
 
     .affiliation,
-    .contact {
+    .contact,
+    .rail-news {
         margin-top: 18px;
     }
 
@@ -507,15 +611,21 @@ a {
         gap: 14px;
     }
 
-    .pub-list {
-        border-top-width: 1px;
+    .pub-item {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .pub-year h3 {
-        border-top: 0;
-        border-bottom: 3px solid var(--ink);
-        padding-bottom: 8px;
-        padding-top: 0;
+    .pub-thumb {
+        width: 100%;
+    }
+
+    .pub-thumb img {
+        height: 150px;
+    }
+
+    .pub-list {
+        border-top-width: 1px;
     }
 
     .footer {
