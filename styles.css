@@ -312,6 +312,31 @@ a {
     color: var(--ink);
 }
 
+#about .section-body p {
+    hyphens: auto;
+    text-align: justify;
+}
+
+.affiliation-logos {
+    align-items: center;
+    border-top: 1px solid var(--line-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    margin-top: 24px;
+    padding-top: 20px;
+}
+
+.affiliation-logos img {
+    height: 28px;
+    opacity: 0.92;
+    width: auto;
+}
+
+.affiliation-logos img.logo-seal {
+    height: 38px;
+}
+
 .section-lead {
     color: var(--muted);
     font-size: 0.82rem;
